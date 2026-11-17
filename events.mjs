@@ -17,7 +17,7 @@ function jsonResponse(statusCode, data) {
 async function requestPage(apiKey, start, end) {
   const url =
     `http://openapi.seoul.go.kr:8088/` +
-    `${encodeURIComponent(436154794c7373773737516c677742)}/json/culturalEventInfo/` +
+    `${encodeURIComponent(apiKey)}/json/culturalEventInfo/` +
     `${start}/${end}/`;
 
   const response = await fetch(url, {
